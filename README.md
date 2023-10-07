@@ -1,2 +1,0 @@
-# JindalAssociates
->node    index.js
