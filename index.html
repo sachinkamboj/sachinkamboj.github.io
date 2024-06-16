@@ -1,951 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Floral Pathways</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ATS" name="keywords">
-    <meta content="ATS" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2;
-    }
-
-
-
-  .popup-content {
-    background-color: white;
-    padding: 10px;
-    width: 90%;
-    max-width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-  </style>
-    <style>
-    /* Styling for the fixed button container */
-.fixed-button {
-    position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-}
-
-/* Styling for the button (optional) */
-.fixed-button button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-</style>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-<script src="popup.js"></script>
+<title>Sachin Kamboj</title>
+<link href="css/style.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="c#,sachink, sachin kamboj, cs, angular,dotnet,net,developer" name="keywords">
+<meta content="" name="description">
 </head>
 
-<body>
-    <!-- Topbar Start -->
-    <!--<div class="container-fluid px-5 d-none d-lg-block">
-        <div class="row gx-5">
-            <div class="col-lg-4 text-center py-3">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase fw-bold">Our Office</h6>
-                        <span>123 Street, New York, USA</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center border-start border-end py-3">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase fw-bold">Email Us</h6>
-                        <span>info@example.com</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center py-3">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase fw-bold">Call Us</h6>
-                        <span>+012 345 6789</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Topbar End -->
-    <!--<form action="contact.php" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br>
-    
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea><br>
-    
-    <input type="submit" value="Send">
-   </form>-->
-
-        <div id="popup-container" class="popup">
-        <div class="popup-content">
-            <!-- Popup content goes here -->
-              <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                <div class="bg-light text-center p-1 p-sm-1 p-md-2 p-lg-2">
-                    <form >
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-12">
-                                <input type="text" id="Text1" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                               <!-- <input type="email" id="email" name="email" required>-->
-                            </div>
-                            <div class="col-12 col-sm-12">
-                                <input type="email" id="Email1" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                               <!-- <input type="text" id="subject" name="subject" required>-->
-                            </div>
-                         <!--   <div class="col-12 col-sm-12">
-                                <div class="date" id="Div1" data-target-input="nearest">
-                                    <input type="text" id="Text2"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Call Back Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>-->
-                           <!-- <div class="col-12 col-sm-12">
-                                <div class="time" id="Div2" data-target-input="nearest">
-                                    <input type="text" id="Text3"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Call Back Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>-->
-                            <div class="col-12">
-                                <textarea id="Textarea1" class="form-control border-0" rows="3" placeholder="Message"></textarea>
-<!--                                <textarea id="message" name="message" required></textarea>-->
-                            </div>
-                            <div class="col-12">
-                               <!-- <input type="file" id="attachment" name="attachment"><br>-->
-                                
-                                 <button class="btn btn-danger w-50" data-dismiss="popup-container" id="close-popup" >Close</button>
-                                
-                                <button class="btn btn-primary" type="submit" onsubmit="sendEmail(); reset(); return false;" value="Send Email">Submit Request</button>
-                                
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-           
-        </div>
+<body class="main">
+    <header class="global-nav">
+        <div class="global-nav__content">            
+            <div class="global-nav__icon global-nav__icons_phone" onclick="window.open('tel:9013129820');"></div>
+            <div class="global-nav__icon global-nav__icons_email" onclick="window.open('mailto:sachin.kamboz@gmail.com');"></div>
+            <a  href= "https://wa.me/9013129820"><div class="global-nav__icon global-nav__icons_msg"></div></a>
+            <div class="global-nav__icon global-nav__icons_video"></div>
+            <a href="docs/sachin_2024.pdf" target="_blank"><div class="global-nav__icon global-nav__icons_print"></div></a>
+        </div> 
+    </header>
+    <div class="profile-background__container">
+        <div class="profile-background__background">         
+        </div>         
     </div>
-
-    <!-- Trigger button or link -->
-    <!-- Add an ID attribute to this element so you can target it with JavaScript -->
-
-   
-
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top bg-light bg-light-radial shadow-sm px-5 pe-lg-0">
-        <nav class="navbar navbar-expand-lg bg-light bg-light-radial navbar-light py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand">
-                <img src="img/main.png" width="150px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="#Home" class="nav-item nav-link active">Home</a>
-                    <a href="#About" class="nav-item nav-link">About</a>
-                    <a href="#Gallery" class="nav-item nav-link">Gallery</a>
-                   <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="project.html" class="dropdown-item">Our Project</a>
-                            <a href="team.html" class="dropdown-item">The Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>-->
-                    <a href="#Contact" class="nav-item nav-link">Contact</a>
-                    <a href="" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Get A Quote <i class="bi bi-arrow-right"></i></a>
+      
+    <div class="pofile_container">
+        <div class="profile_flex">
+          <div class="image_container">
+            <div class="pv-top-card__photo-wrapper">
+                <div class="pv-top-card__edit-photo">
+                    <img width="200" src="https://media.licdn.com/dms/image/D5603AQEhE-EEbZ9fqA/profile-displayphoto-shrink_800_800/0/1707204023208?e=1721865600&amp;v=beta&amp;t=EClngMnUiS0UtU0k6VWbW-1jrmPFPfUa5ShssPKLhSo" height="200" alt="Sachin kamboj" class="profile-photo-edit__preview">
                 </div>
             </div>
-        </nav>
+            
+          </div>
+          <div class="flex-1 flex-column"></div>
+        </div>
+    </div>    
+    <div class="profile-name-details">
+        <div class="heading-large">Sachin Kamboj</div>
+        <div class="sub-heading">Project lead at R Systems</div>
+        <div class="sub-heading">Ghaziabad, Uttar Pradesh, India</div>
     </div>
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-    <div id="Home" class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" height="700px" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <i class="fa fa-home fa-4x text-primary mb-4 d-none d-sm-block"></i>
-                            <h1 class="display-2 text-uppercase text-white mb-md-4">Build Your Dream House With Us</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Get A Quote</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" height="700px" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <i class="fa fa-tools fa-4x text-primary mb-4 d-none d-sm-block"></i>
-                            <h1 class="display-2 text-uppercase text-white mb-md-4">We Are Trusted For Your Project</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+    <div class="card">
+        <div class="heading-md">About</div>
+        <div class="sub-heading">-Project leader with 14 years experience in Software development industry.<br>
+            - Hands on verious front-end and back-end technology C# | JS | Angular| web api | MVC | WPF | Dotnet core etc<br>
+            - Experience handling project management docs.<br>
+            - Knowledge of Azure Cloud and React js.<br>
+        </div>       
     </div>
-    <!-- Carousel End -->
-
-
-    <!-- About Start -->
-    <div id="About" class="container-fluid py-6 px-5">
-        <div class="row g-5">
-            <div class="col-lg-7">
-                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">the Leader</span> in Construction Industry</h1>
-                <h4 class="text-uppercase mb-3 text-body">Paths that enclose a grand lifestyle</h4>
-                <p>The landscape living at Floral Pathways is complimented by a host of state-of-the-art amenities. A central clubhouse, swimming pool, recreational sports and party hall, there is something for everyone in your family for the lifestyle you so desire. </p>
-                <div class="row gx-5 py-2">
-                    <div class="col-sm-6 mb-2">
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>4 BHK floors & 5 BHK Skyvillas</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Ultra modern amenities</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Well ventilated and sun lite houses</p>
-                    </div>
-                    <div class="col-sm-6 mb-2">
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Italian look/wooden finish tiles</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Premium residences</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Designated wet space with double bowl sink</p>
-                    </div>
+    <div class="card">
+        <div class="heading-md">Experience</div>
+        <div  class="flex-card-col">  
+            <div class="flex-card-row">
+                <div class="sub-heading">
+                    <img width="48" src="https://media.licdn.com/dms/image/C4D0BAQHSShscVD6I3A/company-logo_100_100/0/1630575191243/r_systems_logo?e=1724889600&amp;v=beta&amp;t=Frl_JHwWdNb4TeHPMuH95em9Scq0cmV3f_1eMmUNhNk" loading="lazy" height="48" alt="R Systems logo"  >
                 </div>
-                <!--<p class="mb-4">Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos labore</p>
-                <!--<img src="img/signature.jpg" alt="">-->-
+                    <div class="text-col">                
+                        <span class="heading-md">Project Leader</span>
+                        <span class="sub-heading">R Systems · Full-timeR Systems · Full-time</span>
+                        <span class="sub-heading">Nov 2021 - Present · 2 yrs 7 mosNov 2021 to Present · 2 yrs 7 mos</span>
+                        <span class="sub-heading">Noida, Uttar Pradesh, India · Remote</span>
+                    </div>
             </div>
-            <div class="col-lg-5 pb-5" style="min-height: 400px;">
-                <div class="position-relative bg-dark-radial h-100 ms-5">
-                    <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="img/mainr.jpg" style="object-fit: cover;">
+            <hr class="line">
+            <div class="flex-card-row">
+                <div class="sub-heading">
+                    <img width="48" src="https://media.licdn.com/dms/image/C560BAQFj23wnTEuWzA/company-logo_100_100/0/1631328643368?e=1726704000&v=beta&t=G8AeZM8wwkhxTC8xFupPbIj14JBrCHvElr-rlteyYYQ" loading="lazy" height="48" alt="Genpact logo"  >
                 </div>
+                    <div class="text-col" >                
+                        <span class="heading-md">Senior Consultant</span>
+                        <span class="sub-heading">Genpact Headstrong Capital Markets · Full-time</span>
+                        <span class="sub-heading">Oct 2016 - Nov 2021 · 5 yrs 2 mos</span>
+                        <span class="sub-heading">Noida Area, India</span>
+                    </div>
             </div>
-        </div>
+            <hr class="line">
+            <div class="flex-card-row">
+                <div class="sub-heading">
+                    <img width="48" src="https://media.licdn.com/dms/image/C510BAQEzWtMLNVBRjw/company-logo_100_100/0/1631431632214?e=1726704000&v=beta&t=WYsld3qgoniIG8hYxNodTnjai7QbIt7cUUnzu7EO4kg" loading="lazy" height="48" alt="Genpact logo"  >
+                </div >
+                    <div class="text-col">                
+                        <span class="heading-md">Software Engineer</span>
+                        <span class="sub-heading">Thomson Digital</span>
+                        <span class="sub-heading">Aug 2013 - Jun 2016 · 2 yrs 11 mos</span>
+                        <span class="sub-heading">Noida Area, India</span>
+                    </div>
+            </div>
+            <hr class="line">
+            <div class="flex-card-row">
+                <div class="sub-heading">
+                    <img width="48" src="https://media.licdn.com/dms/image/C5603AQFelMQdPeo33Q/profile-displayphoto-shrink_400_400/0/1517585044043?e=1724284800&v=beta&t=WTkR-Jldd5Z4sV-P2VLXIPAFJhpxWEawU-ELGfyoABs" loading="lazy" height="48" alt="Genpact logo"  >
+                </div >
+                    <div class="text-col">                
+                        <span class="heading-md">Software Engineer</span>
+                        <span class="sub-heading">satc marketing</span>
+                        <span class="sub-heading">Jul 2011 - Jul 2013 · 2 yrs 1 mos</span>
+                        <span class="sub-heading">Gurgaon, India</span>
+                    </div>
+            </div>
+        </div>               
     </div>
-    <!-- About End -->
-    
-
-    <!-- Services Start -->
-    <div id="Services" class="container-fluid bg-light py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">Building Your <span class="text-primary">Vision</span></h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-white d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="img/r2.jpg" alt="">
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-building text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">ATS HomeKraft - creating unique path</h4>
-                        <p>ATS HomeKraft is the aspirational housing venture of ATS and works with the philosophy of building homes that have a high quality quotient. ATS HomeKraft has set high benchmarks in the aspirational housing segment and with its new project, Floral Pathways, it is all set to take the aspirational housing to another level.</p>
-                        <!--<a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
-                    </div>
+    <div class="card">
+        <div class="heading-md">Education</div>
+        <div class="flex-card-row">
+            <div class="sub-heading">
+                <img width="48" src="https://media.licdn.com/dms/image/C4D0BAQFSeGt81F28yg/company-logo_100_100/0/1631325920062?e=1726704000&v=beta&t=g1gEwFdwYsvAyBDk4QcuxLqk94jeOswlvV6u4XPfMvs" loading="lazy" height="48" alt="ignou logo"  >
+            </div >
+                <div class="text-col">                
+                    <span class="heading-md">Indira Gandhi National Open University</span>
+                    <span class="sub-heading">Master of Computer Applications - MCA, Computer Science</span>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="img/33.jpg" alt="">
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-home text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Unfolding the landscape living</h4>
-                        <p> Taking the legacy of ATS Advantage forward in Ghaziabad, Floral Pathways is ready to give you a unique living experience with all the luxury at a prominent location. It's not just about the indoors of your home but also about the outdoors that make you spend more time outside the walls and amidst nature.</p>
-                        <!--<a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
-                    </div>
+        </div> 
+        <hr class="line">
+        <div class="flex-card-row">
+            <div class="sub-heading">
+                <img width="48" src="https://media.licdn.com/dms/image/C560BAQE8Muk3BIhxVw/company-logo_100_100/0/1631342697054?e=1726704000&v=beta&t=WvnzMHb-asaY80MeA5B7rQGV3YwtHh-ooJ3NakDlDKA" loading="lazy" height="48" alt="ccs logo"  >
+            </div >
+                <div class="text-col">                
+                    <span class="heading-md">CCS (Chaudhary Charan Singh)University</span>
+                    <span class="sub-heading">Bachelor of Science - BS</span>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="img/12.jpg" alt="">
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-drafting-compass text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Path that encourage you to walk</h4>
-                        <p>Floral Pathways, as the name suggests, is designed for landscape living with curvilinear paths and variety of flowers for a refreshing experience. Spread in 5.3 acres, It's an upcoming residential project by ATS HomeKraft on NH-24, Ghaziabad.</p>
-                        <!--<a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="img/13.jpg" alt="">
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-palette text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Paths that take you to the desired privacy</h4>
-                        <p>Walk through the gates of Floral Pathways and take any path because all of them lead to the privacy that your heart desires. With just two apartments per floor, your privacy and private space has no infringement. All apartments face the central greens that hold big trees and floral sweeps.</p>
-                        <!--<a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                    <img class="img-fluid" src="img/72.jpg" alt="">
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-tools text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Take the paths to posh shopping</h4>
-                        <p>Next to Floral Pathways is the finest high-street lifestyle destination - Khyber Range. It is home to everything from luxury haute couture, sprawling fashion labels, to fine dining restaurants, cafes and a multiplex too.</p>
-                        <!--<a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center" >
-                    <img class="img-fluid" src="img/48.jpg" alt="" >
-                    <div class="service-icon bg-white">
-                        <i class="fa fa-3x fa-paint-brush text-primary"></i>
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-uppercase mb-3">Paths to grand indoors</h4>
-                        <p>The indoors of every home in Floral Pathways are as beautiful as the outdoors. Each apartment has luxurious fitments and is designed to serve every need of your family.</p>
-                       <!-- <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> 
     </div>
-    <!-- Services End -->
-
-
-    <!-- Appointment Start -->
-    <!--<form action="contact.php" method="POST" enctype="multipart/form-data">-->
-    <div id="Contact" class="container-fluid py-md-6 px-md-5 py-lg-6 px-lg-5 py-sm-3 px-sm-3 py-3 px-3">
-        <div class="row gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <div class="mb-4">
-                    <h1 class="display-5 text-uppercase mb-4">Request A <span class="text-primary">Call Back</span></h1>
+    <div class="card">
+        <div class="heading-md">Licenses & certifications</div>
+        <div class="flex-card-row">
+            <div class="sub-heading">
+                <img width="48" src="https://media.licdn.com/dms/image/C4D0BAQG8U0EaYqTApg/company-logo_100_100/0/1631306441139?e=1726704000&v=beta&t=C64E6x14tTtid7EDUR5B1y3LF3hp3X7XaN7pwe5N0Vw" loading="lazy" height="48" alt="ignou logo"  >
+            </div >
+                <div class="text-col">                
+                    <span class="heading-md">SCJP</span>
+                    <span class="sub-heading">Sun Microsystems</span>
                 </div>
-               
-                <a class="btn btn-primary py-3 px-5 ml-sm-4 ml-lg-5 ml-md-5 ml-xs-5 " href="">Let's Talk</a>
-            </div>
-            <div class="col-lg-8 col-md-10 col-xs-12 col-sm-12">
-                <div class="bg-light text-center p-3 p-sm-3 p-md-5 p-lg-5">
-                    <form onsubmit="sendEmail(); reset(); return false;">
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" id="txtName" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                               <!-- <input type="email" id="email" name="email" required>-->
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" id="TxtEmail" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                               <!-- <input type="text" id="subject" name="subject" required>-->
-                            </div>
-                           <!-- <div class="col-12 col-sm-6">
-                                <div class="date" id="date" data-target-input="nearest">
-                                    <input type="text" id="TxtDate"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Call Back Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="time" id="time" data-target-input="nearest">
-                                    <input type="text" id="Txttime"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Call Back Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>-->
-                            <div class="col-12">
-                                <textarea id="TxtMsg" class="form-control border-0" rows="5" placeholder="Message"></textarea>
-<!--                                <textarea id="message" name="message" required></textarea>-->
-                            </div>
-                            <div class="col-12">
-                               <!-- <input type="file" id="attachment" name="attachment"><br>-->
-                                <button class="btn btn-primary w-100 py-3" type="submit" value="Send Email">Submit Request</button>
-                            </div>
-                        </div>
-                    </form>
+        </div> 
+        <hr class="line">
+        <div class="flex-card-row">
+            <div class="sub-heading">
+                <img width="48" src="https://media.licdn.com/dms/image/C560BAQE8Muk3BIhxVw/company-logo_100_100/0/1631342697054?e=1726704000&v=beta&t=WvnzMHb-asaY80MeA5B7rQGV3YwtHh-ooJ3NakDlDKA" loading="lazy" height="48" alt="ccs logo"  >
+            </div >
+                <div class="text-col">                
+                    <span class="heading-md">CIC</span>
+                    <span class="sub-heading">Bachelor of Science - BS</span>
                 </div>
-            </div>
-        </div>
+        </div> 
+        <hr class="line">
+        <div class="flex-card-row">
+            <div class="sub-heading">
+                <img width="48" src="https://media.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1630652622688/microsoft_logo?e=1726704000&v=beta&t=_kx96ZmYLhihc9yjqQ2sm4Y2NjmKBhWPaa_OswCieYE" loading="lazy" height="48" alt="ccs logo"  >
+            </div >
+                <div class="text-col">                
+                    <span class="heading-md">MCP Sql server 2005</span>
+                    <span class="sub-heading">Microsoft</span>
+                </div>
+        </div> 
     </div>
-       <!-- </form>-->
-    <!-- Appointment End -->
+    <div class="profile-name-details">
+    <div class="heading-md">Contect :</div>
+        <div class="sub-heading"> <strong>Phone:</strong> +91-9013129820, +919212291014</div>
+        <div class="sub-heading"> <strong>Email:</strong> sachin_kamboj@gmail.com </div> 
+    </div>   
+   <footer class="global-footer
+   global-footer--static">
 
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid bg-light py-6 px-5 " style="z-index: 2">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">Some  <span class="text-primary">Glimpse</span> Of Our Dream  Projects</h1>
-        </div>
-        <div class="row gx-5">
-            <div class="col-12 text-center">
-                <div class="d-inline-block bg-dark-radial text-center pt-4 px-5 mb-5">
-                    <ul class="list-inline mb-0" id="portfolio-flters">
-                        <li class="btn btn-outline-primary bg-white p-2 active mx-2 mb-4" data-filter=".first">
-                            <img src="img/portfolio-1.jpg" style="width: 150px; height: 100px;">
-                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
-                                <h6 class="text-white text-uppercase m-0">Master Plan</h6>
-                            </div>
-                        </li>
-                        <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".second">
-                            <img src="img/portfolio-2.jpg" style="width: 150px; height: 100px;">
-                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
-                                <h6 class="text-white text-uppercase m-0">Isometric View</h6>
-                            </div>
-                        </li>
-                        <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".third">
-                            <img src="img/portfolio-3.jpg" style="width: 150px; height: 100px;">
-                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
-                                <h6 class="text-white text-uppercase m-0">Typical Unit Plan</h6>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row g-5 portfolio-container">
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first second third">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="img/master-plan.jpg" alt="">
-                  <!--  <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>-->
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first second third">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="img/isomertic-view.jpg" alt="">
-                    <!--<a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>-->
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first second third">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="img/typical-unit-plan.jpg" alt="">
-                    <!--<a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>-->
-                </div>
-            </div>
-            <!--<div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>-->
-            <!--<div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>-->
-            <!--<div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-                <div class="position-relative portfolio-box">
-                    <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                    <a class="portfolio-title shadow-sm" href="">
-                        <p class="h4 text-uppercase">Project Name</p>
-                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
-                    </a>
-                    <a class="portfolio-btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                        <i class="bi bi-plus text-white"></i>
-                    </a>
-                </div>
-            </div>-->
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-
-    <!-- Team Start -->
-    <!--<div class="container-fluid py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">We Are <span class="text-primary">Professional & Expert</span> Workers</h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Adam Phillips</h4>
-                            <span>CEO & Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-2.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Dylan Adams</h4>
-                            <span>Civil Engineer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-3.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Jhon Doe</h4>
-                            <span>Interior Designer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Josh Dunn</h4>
-                            <span>Painter</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <!--<div class="container-fluid bg-light py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">What Our <span class="text-primary">Happy Cleints</span> Say!!!</h1>
-        </div>
-        <div class="row gx-0 align-items-center">
-            <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-                <img class="img-fluid w-100 h-100" src="img/testimonial.jpg">
-            </div>
-            <div class="col-xl-8 col-lg-7 col-md-12">
-                <div class="testimonial bg-light">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="row gx-4 align-items-center">
-                            <div class="col-xl-4 col-lg-5 col-md-5">
-                                <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="img/testimonial-1.jpg" alt="">
-                            </div>
-                            <div class="col-xl-8 col-lg-7 col-md-7">
-                                <h4 class="text-uppercase mb-0">Client Name</h4>
-                                <p>Profession</p>
-                                <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> Dolores sed duo
-                                    clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                                    lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit
-                                    ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="row gx-4 align-items-center">
-                            <div class="col-xl-4 col-lg-5 col-md-5">
-                                <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="img/testimonial-2.jpg" alt="">
-                            </div>
-                            <div class="col-xl-8 col-lg-7 col-md-7">
-                                <h4 class="text-uppercase mb-0">Client Name</h4>
-                                <p>Profession</p>
-                                <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> Dolores sed duo
-                                    clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                                    lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit
-                                    ipsum.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start -->
-    <div id="Gallery" class="container-fluid py-6 px-5" style="z-index: 3">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">Gallery</h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="img/1.jpg" alt="">
-                   <!-- <div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>-->
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="img/2.jpg" alt="">
-                   <!-- <div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>-->
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="img/3.jpg" alt="">
-                    <!--<div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>-->
-                </div>
-            </div>
-             <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="img/4.jpg" alt="">
-                   <!-- <div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>-->
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="img/5.jpg" alt="">
-                    <!--<div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>-->
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="bg-light">
-                    <img class="img-fluid" src="img/6.jpg" alt="">
-                    <!--<div class="p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="35" height="35" alt="">
-                                <span>John Doe</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
-                            </div>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
-                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
-    <div class="mapouter">
-        <div class="gmap_canvas">
-            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1374&amp;height=400&amp;hl=en&amp;q=ATS Grand Realtors Private Limited NH 24, Near Columbia Asia Hospital, Ghaziabad&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-            <a href="https://connectionsgame.org/">Connections Unlimited</a>
-
-        </div>
-        <style>
-            .mapouter {
-                position: relative;
-                text-align: right;
-                width: 100%;
-                height: 400px;
-                padding:0px 5px 5px 5px;
-            }
-
-            .gmap_canvas {
-                overflow: hidden;
-                background: none!important;
-                width: 100%;
-                height: 400px;
-            }
-
-            .gmap_iframe {
-                height: 400px!important;
-            }
-        </style>
-    </div>
-     <div class="fixed-button">
-        <button id="open-popup">Enquiry</button>
-    </div>
-    
-
-    <!-- Footer Start -->
-    <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
-        <div class="row g-5">
-            <div class="col-lg-6 pe-lg-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 display-4 text-uppercase text-white"><i class="bi bi-building text-primary me-2"></i>WEBUILD</h1>
-                </a>
-                <p><i class="fa fa-map-marker-alt me-2"></i>ATS Grand Realtors Private Limited</p>
-                <p>Site Address: NH 24, Near Columbia Asia Hospital, Ghaziabad, UP 201002</p>
-                <p>RERA Reg. No. UPRERAPRJ750395</p>
-                <p>Corporate Office: ATS Tower,Plot No. 16, Sector 135, Noida. Ph.: 0120-7111500</p>
-
-                
-                <p><i class="fa fa-phone-alt me-2"></i>9540871111</p>
-               <!-- <p><i class="fa fa-envelope me-2"></i>info@example.com</p>-->
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 ps-lg-5">
-                <div class="row g-5">
-                    <div class="col-sm-6">
-                        <h4 class="text-white text-uppercase mb-4">Quick Links</h4>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white-50 mb-2" href="#Home"><i class="fa fa-angle-right me-2"></i>Home</a>
-                            <a class="text-white-50 mb-2" href="#About"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                            <a class="text-white-50 mb-2" href="#Gallery"><i class="fa fa-angle-right me-2"></i>Gallery</a>
-                            <!--<a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>-->
-                            <a class="text-white-50" href="#Contact"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
-                        </div>
-                    </div>
-                   <!-- <div class="col-sm-6">
-                        <h4 class="text-white text-uppercase mb-4">Popular Links</h4>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                            <a class="text-white-50" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
-                        </div>
-                    </div>-->
-                   <!-- <div class="col-sm-12">
-                        <h4 class="text-white text-uppercase mb-4">Newsletter</h4>
-                        <div class="w-100">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-light" style="padding: 20px 30px;" placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign Up</button>
-                            </div>
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="py-4 px-5 text-center text-md-start">
-                <p class="mb-0">&copy; <a class="text-primary" href="#"><b>Disclaimer :</b>The information provided herein by Corporate Deal Infratech is for general informational purposes only. All information here is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information provided herein. Corporate Deal Infratech makes no representations or warranties of any kind with respect to the designs, and proposed elevation. Corporate Deal Infratech makes no representations or warranties of any kind, with respect to content, design, etc. in particular. Any and all warranties or representations are provided by and are solely the responsibility of, the developer providing that content.UP RERA NO: UPRERAAGT16599</p>
-            </div>         
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <!--<button class="btn btn-lg btn-primary btn-lg-square" id="open-popup">Open Popup</button>-->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail()
-        {
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "shivamsrma9027@gmail.com",
-                Password : "3020059737@2",
-                To: 'ss2055891@gmail.com',
-                From: document.getElementById("TxtEmail").value,
-                Subject : "Enquiry",
-                Body : "Name: " + document.getElementById("txtName").value
-            }).then(
-           message => alert(message)
-           );
-
-        }
-    </script>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-   
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-     <!-- Include your scripts at the bottom of the body for better performance -->
-    <script src="popup.js"></script>
-</body>
-
-</html>
+   </footer>
+  </body>
+</html>  
